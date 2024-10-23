@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:provider_statemanagement/providers/counter_provider.dart';
-import 'package:provider_statemanagement/views/screens/home_screen.dart';
+import 'package:provider_statemanagement/views/screens/cart_screen.dart';
 
 class CounterScreen extends StatelessWidget {
   const CounterScreen({super.key});
@@ -49,7 +49,7 @@ class CounterScreen extends StatelessWidget {
               child: const Text("Cart Screen",
                 style: TextStyle(
                     fontWeight: FontWeight.w400,
-                    fontSize: 15,
+                    fontSize: 18,
                     color: Colors.white
                 ),
               ),

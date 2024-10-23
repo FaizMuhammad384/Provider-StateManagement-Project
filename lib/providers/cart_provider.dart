@@ -30,11 +30,8 @@ class CartProvider extends ChangeNotifier {
 
 
   /// get total price of product
-  getTotalProduct(){
-    _products.fold(0, (previousValue, product)
-    => int.parse((previousValue + product.product_price).toString()),
-    );
-    notifyListeners();
+ int getTotalProduct(){
+   return _products.fold(0, (previousValue, product) => previousValue + product.product_price);
   }
 
 

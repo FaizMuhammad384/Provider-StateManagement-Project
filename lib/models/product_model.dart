@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class ProductModel {
   int product_id;
   String product_name;
-  double product_price;
+  int product_price;
   Color produc_color;
 
   ProductModel({
