@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:provider_statemanagement/providers/cart_provider.dart';
+import 'package:provider_statemanagement/views/screens/theme_screen.dart';
 
 
 
@@ -44,7 +45,6 @@ class CartDetailsScreen extends StatelessWidget {
                         style: const TextStyle(
                           fontWeight: FontWeight.w500,
                           fontSize: 16,
-                          color: Colors.black,
                         ),
                       ),
                       subtitle: Text("${product.product_price}"),
@@ -53,9 +53,27 @@ class CartDetailsScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 50),
+              Center(
+                child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> const ThemeScreen()));
+                  },
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.purple,
+                  ),
+                  child:  const Text("Theme Screen",
+                    style: TextStyle(
+                        fontWeight: FontWeight.w400,
+                        fontSize: 18,
+                        color: Colors.white
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 50),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 15),
-              child: Row(
+                child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   const Text(
@@ -63,7 +81,6 @@ class CartDetailsScreen extends StatelessWidget {
                     style: TextStyle(
                       fontWeight: FontWeight.w700,
                       fontSize: 20,
-                      color: Colors.black,
                     ),
                   ),
                   Text(
@@ -72,7 +89,6 @@ class CartDetailsScreen extends StatelessWidget {
                     style: const TextStyle(
                       fontWeight: FontWeight.w700,
                       fontSize: 20,
-                      color: Colors.black,
                     ),
                   ),
                 ],

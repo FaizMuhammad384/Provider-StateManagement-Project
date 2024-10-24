@@ -11,7 +11,6 @@ class CounterScreen extends StatelessWidget {
     debugPrint("build function called!!!");
     return Scaffold(
       appBar: AppBar(
-        centerTitle: true,
         backgroundColor: Colors.purple,
         title: const Text(
           "Counter App",
@@ -33,7 +32,6 @@ class CounterScreen extends StatelessWidget {
                   style: const TextStyle(
                       fontWeight: FontWeight.w500,
                       fontSize: 28,
-                      color: Colors.black
                   ),
                 );
               },

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:provider_statemanagement/constants.dart';
+import 'package:provider_statemanagement/constants/constant.dart';
 import 'package:provider_statemanagement/models/product_model.dart';
 import 'package:provider_statemanagement/providers/cart_provider.dart';
 import 'package:provider_statemanagement/views/screens/cart_details_screen.dart';
@@ -55,7 +55,7 @@ class HomeScreen extends StatelessWidget {
                       style: const TextStyle(
                           fontWeight: FontWeight.w500,
                           fontSize: 16,
-                          color: Colors.black),
+                      ),
                     ),
                     subtitle: Text("${productModel.product_price}"),
                     leading: Container(
