@@ -5,6 +5,8 @@ import 'package:provider_statemanagement/models/product_model.dart';
 import 'package:provider_statemanagement/providers/cart_provider.dart';
 import 'package:provider_statemanagement/views/screens/cart_details_screen.dart';
 
+
+
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 

@@ -6,6 +6,7 @@ class ProductModel {
   int product_price;
   Color produc_color;
 
+
   ProductModel({
     required this.product_id,
     required this.product_name,
